@@ -1,0 +1,8 @@
+django
+djangorestframework
+gunicorn
+psycopg2-binary
+django-cors-headers
+python-dotenv
+Pillow
+requests
