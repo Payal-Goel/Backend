@@ -11,9 +11,14 @@ from rest_framework.permissions import AllowAny
 from rest_framework.authtoken.models import Token
 from .models import Book, Borrow
 from .serializers import BookSerializer, BorrowSerializer
+from django.shortcuts import render
+from django.http import HttpResponse
+
 
 logger = logging.getLogger(__name__)
 
+def home(request):
+    return render(request, 'myapp/home.html')
 
 class RegisterView(APIView):
     permission_classes = [AllowAny]
